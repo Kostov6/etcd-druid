@@ -3,7 +3,7 @@ structure:
   source: /README.md
 - dir: etcd-druid
   structure:
-  - fileTree: https://github.com/gardener/etcd-druid/tree/DEFAULT_BRANCH/docs
+  - fileTree: /docs
   - file: api-reference
     properties:
       frontmatter:
