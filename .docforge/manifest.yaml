@@ -1,11 +1,10 @@
 structure:
-- name: _index.md
+- file: _index.md
   source: /README.md
-- name: etcd-druid
-  nodesSelector:
-    path: https://github.com/gardener/etcd-druid/tree/DEFAULT_BRANCH/docs
-  nodes:
-  - name: api-reference
+- dir: etcd-druid
+  structure:
+  - fileTree: https://github.com/gardener/etcd-druid/tree/DEFAULT_BRANCH/docs
+  - file: api-reference
     properties:
       frontmatter:
         title: API Reference
